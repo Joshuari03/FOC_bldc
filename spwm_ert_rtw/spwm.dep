@@ -2,33 +2,53 @@ spwm.o: \
  C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/spwm.c \
  C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/spwm.h \
  C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/rtwtypes.h \
- C:/PROGRA~1/MATLAB/R2024b/simulink/include/rtw_continuous.h \
+ C:/PROGRA~1/MATLAB/R2024b/simulink/include/rtw_extmode.h \
  C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/rtwtypes.h \
+ C:/PROGRA~1/MATLAB/R2024b/simulink/include/sysran_types.h \
+ C:/PROGRA~1/MATLAB/R2024b/simulink/include/rtw_continuous.h \
  C:/PROGRA~1/MATLAB/R2024b/simulink/include/rtw_solver.h \
  C:/PROGRA~1/MATLAB/R2024b/simulink/include/rtw_continuous.h \
+ C:/PROGRA~1/MATLAB/R2024b/toolbox/coder/xcp/src/target/ext_mode/include/ext_mode.h \
+ C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/ext_mode_types.h \
  C:/ProgramData/MATLAB/SupportPackages/R2024bPrerelease/toolbox/target/supportpackages/arduinobase/include/MW_arduino_digitalio.h \
  C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/spwm_types.h \
+ C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/rtGetNaN.h \
+ C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/rt_nonfinite.h \
  C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/MW_target_hardware_resources.h \
  C:/ProgramData/MATLAB/SupportPackages/R2024bPrerelease/toolbox/target/supportpackages/arduinotarget/scheduler/include/arduinoAVRScheduler.h \
  C:/ProgramData/MATLAB/SupportPackages/R2024bPrerelease/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/Arduino.h \
  C:/ProgramData/MATLAB/SupportPackages/R2024bPrerelease/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/binary.h \
- C:/ProgramData/MATLAB/SupportPackages/R2024bPrerelease/aCLI/data/packages/arduino/hardware/avr/1.8.3/variants/standard/pins_arduino.h
+ C:/ProgramData/MATLAB/SupportPackages/R2024bPrerelease/aCLI/data/packages/arduino/hardware/avr/1.8.3/variants/standard/pins_arduino.h \
+ C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/spwm_private.h \
+ C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/multiword_types.h
 
 C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/spwm.h:
 
 C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/rtwtypes.h:
 
-C:/PROGRA~1/MATLAB/R2024b/simulink/include/rtw_continuous.h:
+C:/PROGRA~1/MATLAB/R2024b/simulink/include/rtw_extmode.h:
 
 C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/rtwtypes.h:
+
+C:/PROGRA~1/MATLAB/R2024b/simulink/include/sysran_types.h:
+
+C:/PROGRA~1/MATLAB/R2024b/simulink/include/rtw_continuous.h:
 
 C:/PROGRA~1/MATLAB/R2024b/simulink/include/rtw_solver.h:
 
 C:/PROGRA~1/MATLAB/R2024b/simulink/include/rtw_continuous.h:
 
+C:/PROGRA~1/MATLAB/R2024b/toolbox/coder/xcp/src/target/ext_mode/include/ext_mode.h:
+
+C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/ext_mode_types.h:
+
 C:/ProgramData/MATLAB/SupportPackages/R2024bPrerelease/toolbox/target/supportpackages/arduinobase/include/MW_arduino_digitalio.h:
 
 C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/spwm_types.h:
+
+C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/rtGetNaN.h:
+
+C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/rt_nonfinite.h:
 
 C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/MW_target_hardware_resources.h:
 
@@ -39,3 +59,7 @@ C:/ProgramData/MATLAB/SupportPackages/R2024bPrerelease/aCLI/data/packages/arduin
 C:/ProgramData/MATLAB/SupportPackages/R2024bPrerelease/aCLI/data/packages/arduino/hardware/avr/1.8.3/cores/arduino/binary.h:
 
 C:/ProgramData/MATLAB/SupportPackages/R2024bPrerelease/aCLI/data/packages/arduino/hardware/avr/1.8.3/variants/standard/pins_arduino.h:
+
+C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/spwm_private.h:
+
+C:/Users/joshu.THINKJOSHUA/Desktop/MyStuff/Arduino/FOC_bldc/spwm_ert_rtw/multiword_types.h:
