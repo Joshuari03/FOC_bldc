@@ -1,14 +1,15 @@
 /*
- * Prerelease License - for engineering feedback and testing purposes
- * only. Not for sale.
+ * Academic License - for use in teaching, academic research, and meeting
+ * course requirements at degree granting institutions only.  Not for
+ * government, commercial, or other organizational use.
  *
  * File: spwm.h
  *
  * Code generated for Simulink model 'spwm'.
  *
- * Model version                  : 1.1
+ * Model version                  : 1.2
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Tue Sep 17 22:21:52 2024
+ * C/C++ source code generated on : Wed Sep 18 22:36:14 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -21,28 +22,18 @@
 #ifndef spwm_COMMON_INCLUDES_
 #define spwm_COMMON_INCLUDES_
 #include "rtwtypes.h"
-#include "rtw_extmode.h"
-#include "sysran_types.h"
 #include "rtw_continuous.h"
 #include "rtw_solver.h"
-#include "ext_mode.h"
 #include "MW_arduino_digitalio.h"
 #endif                                 /* spwm_COMMON_INCLUDES_ */
 
 #include "spwm_types.h"
 #include "rtGetNaN.h"
 #include "rt_nonfinite.h"
+#include <stddef.h>
 #include "MW_target_hardware_resources.h"
 
 /* Macros for accessing real-time model data structure */
-#ifndef rtmGetFinalTime
-#define rtmGetFinalTime(rtm)           ((rtm)->Timing.tFinal)
-#endif
-
-#ifndef rtmGetRTWExtModeInfo
-#define rtmGetRTWExtModeInfo(rtm)      ((rtm)->extModeInfo)
-#endif
-
 #ifndef rtmGetErrorStatus
 #define rtmGetErrorStatus(rtm)         ((rtm)->errorStatus)
 #endif
@@ -51,45 +42,10 @@
 #define rtmSetErrorStatus(rtm, val)    ((rtm)->errorStatus = (val))
 #endif
 
-#ifndef rtmGetStopRequested
-#define rtmGetStopRequested(rtm)       ((rtm)->Timing.stopRequestedFlag)
-#endif
-
-#ifndef rtmSetStopRequested
-#define rtmSetStopRequested(rtm, val)  ((rtm)->Timing.stopRequestedFlag = (val))
-#endif
-
-#ifndef rtmGetStopRequestedPtr
-#define rtmGetStopRequestedPtr(rtm)    (&((rtm)->Timing.stopRequestedFlag))
-#endif
-
-#ifndef rtmGetT
-#define rtmGetT(rtm)                   (rtmGetTPtr((rtm))[0])
-#endif
-
-#ifndef rtmGetTFinal
-#define rtmGetTFinal(rtm)              ((rtm)->Timing.tFinal)
-#endif
-
-#ifndef rtmGetTPtr
-#define rtmGetTPtr(rtm)                ((rtm)->Timing.t)
-#endif
-
-/* Block signals (default storage) */
-typedef struct {
-  boolean_T GreaterThan;               /* '<Root>/GreaterThan' */
-} B_spwm_T;
-
 /* Block states (default storage) for system '<Root>' */
 typedef struct {
   codertarget_arduinobase_block_T obj; /* '<Root>/Digital Output' */
-  real_T lastSin;                      /* '<Root>/Sine Wave' */
-  real_T lastCos;                      /* '<Root>/Sine Wave' */
-  struct {
-    void *LoggedData;
-  } Scope_PWORK;                       /* '<Root>/Scope' */
-
-  int32_T systemEnable;                /* '<Root>/Sine Wave' */
+  int32_T counter;                     /* '<Root>/Sine Wave' */
   uint32_T m_bpIndex;                  /* '<S2>/1-D Lookup Table' */
 } DW_spwm_T;
 
@@ -108,28 +64,7 @@ typedef struct {
 
 /* Real-time Model Data Structure */
 struct tag_RTM_spwm_T {
-  const char_T *errorStatus;
-  RTWExtModeInfo *extModeInfo;
-  RTWSolverInfo solverInfo;
-
-  /*
-   * Sizes:
-   * The following substructure contains sizes information
-   * for many of the model attributes such as inputs, outputs,
-   * dwork, sample times, etc.
-   */
-  struct {
-    uint32_T checksums[4];
-  } Sizes;
-
-  /*
-   * SpecialInfo:
-   * The following substructure contains special information
-   * related to other components that are dependent on RTW.
-   */
-  struct {
-    const void *mappingInfo;
-  } SpecialInfo;
+  const char_T * volatile errorStatus;
 
   /*
    * Timing:
@@ -138,23 +73,8 @@ struct tag_RTM_spwm_T {
    */
   struct {
     uint32_T clockTick0;
-    time_T stepSize0;
-    uint32_T clockTick1;
-    uint32_T clockTick2;
-    struct {
-      uint8_T TID[3];
-    } TaskCounters;
-
-    time_T tFinal;
-    SimTimeStep simTimeStep;
-    boolean_T stopRequestedFlag;
-    time_T *t;
-    time_T tArray[3];
   } Timing;
 };
-
-/* Block signals (default storage) */
-extern B_spwm_T spwm_B;
 
 /* Block states (default storage) */
 extern DW_spwm_T spwm_DW;
@@ -171,13 +91,6 @@ extern void spwm_terminate(void);
 extern RT_MODEL_spwm_T *const spwm_M;
 extern volatile boolean_T stopRequested;
 extern volatile boolean_T runModel;
-
-/*-
- * These blocks were eliminated from the model due to optimizations:
- *
- * Block '<Root>/Pulse Generator' : Unused code path elimination
- * Block '<S2>/Unit Delay' : Unused code path elimination
- */
 
 /*-
  * The generated code includes comments that allow you to trace directly

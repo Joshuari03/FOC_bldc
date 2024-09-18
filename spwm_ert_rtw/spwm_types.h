@@ -1,14 +1,15 @@
 /*
- * Prerelease License - for engineering feedback and testing purposes
- * only. Not for sale.
+ * Academic License - for use in teaching, academic research, and meeting
+ * course requirements at degree granting institutions only.  Not for
+ * government, commercial, or other organizational use.
  *
  * File: spwm_types.h
  *
  * Code generated for Simulink model 'spwm'.
  *
- * Model version                  : 1.1
+ * Model version                  : 1.2
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Tue Sep 17 22:21:52 2024
+ * C/C++ source code generated on : Wed Sep 18 22:36:14 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR

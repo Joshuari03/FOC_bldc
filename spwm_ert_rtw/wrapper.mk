@@ -165,12 +165,12 @@ SHAREDLIB_LDFLAGS += $(SHAREDLIB_LDFLAGS_SKIPFORSIL)
 ###########################################################################
 ## Define Macros
 ###########################################################################
-SLMKPATH=C:/PROGRA~3/MATLAB/SUPPOR~1/R2024B~1/toolbox/target/SUPPOR~1/ARDUIN~1/STATIC~1
+SLMKPATH=C:/PROGRA~3/MATLAB/SUPPOR~1/R2024b/toolbox/target/SUPPOR~1/ARDUIN~1/STATIC~1
 MODELMK=spwm.mk
 SLIB_PATH=C:/Users/JOSHU~1.THI/DOCUME~1/MATLAB/R2024b/ARDUIN~1/ARDUIN~1/FASTER~1
 VARIANT_HEADER_PATH=$(ARDUINO_AVR_ROOT)/hardware/avr/1.8.3/variants/standard
-ARDUINO_SKETCHBOOK_ROOT=C:/PROGRA~3/MATLAB/SUPPOR~1/R2024B~1/aCLI/user/LIBRAR~1
-ARDUINO_BASESUPPORTPKG_ROOT=C:/PROGRA~3/MATLAB/SUPPOR~1/R2024B~1/toolbox/target/SUPPOR~1/ARDUIN~1
+ARDUINO_SKETCHBOOK_ROOT=C:/PROGRA~3/MATLAB/SUPPOR~1/R2024b/aCLI/user/LIBRAR~1
+ARDUINO_BASESUPPORTPKG_ROOT=C:/PROGRA~3/MATLAB/SUPPOR~1/R2024b/toolbox/target/SUPPOR~1/ARDUIN~1
 
 
 ###########################################################################
