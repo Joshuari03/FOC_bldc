@@ -7,12 +7,12 @@
  *
  * Code generated for Simulink model 'spwm'.
  *
- * Model version                  : 1.2
+ * Model version                  : 1.5
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Wed Sep 18 22:36:14 2024
+ * C/C++ source code generated on : Sun Sep 22 12:27:03 2024
  *
  * Target selection: ert.tlc
- * Embedded hardware selection: Atmel->AVR
+ * Embedded hardware selection: ARM Compatible->ARM Cortex
  * Code generation objectives: Unspecified
  * Validation result: Not run
  */
@@ -20,11 +20,6 @@
 #ifndef rtmodel_h_
 #define rtmodel_h_
 #include "spwm.h"
-
-/* Macros generated for backwards compatibility  */
-#ifndef rtmGetStopRequested
-#define rtmGetStopRequested(rtm)       ((void*) 0)
-#endif
 #endif                                 /* rtmodel_h_ */
 
 /*

@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include <Servo.h>
+#include <fstream>
 
 Servo bldc;
 int Val = 1;
@@ -42,3 +43,4 @@ void loop() {
   }
   delay(50);
 }
+
